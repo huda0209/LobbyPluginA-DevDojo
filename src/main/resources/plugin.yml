@@ -1,0 +1,8 @@
+name: LobbyPluginA DevDojo
+version: '${version}'
+main: com.github.huda0209.lobbypluginadevdojo.LobbyPluginADevDojo
+prefix: LobbyPluginA DevDojo
+authors: [ huda0209 ]
+permissions:
+  LobbyPluginADevDojo.breakBlock:
+    default: op
