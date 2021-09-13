@@ -1,4 +1,4 @@
-name: LobbyPluginA DevDojo
+name: LobbyPluginADevDojo
 version: '${version}'
 main: com.github.huda0209.lobbypluginadevdojo.LobbyPluginADevDojo
 prefix: LobbyPluginA DevDojo
