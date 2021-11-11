@@ -61,7 +61,7 @@ public final class LobbyPluginADevDojo extends JavaPlugin {
 
             Location joinLocate = new Location(event.getPlayer().getServer().getWorld("lobby"),0.5,64,0.5,0,0);
             event.getPlayer().teleport(joinLocate);
-            event.setJoinMessage(ChatColor.translateAlternateColorCodes('&',event.getPlayer().getDisplayName()+" joined Lobby server."));
+            event.setJoinMessage(ChatColor.translateAlternateColorCodes('&',event.getPlayer().getDisplayName()+" joined Lobby Server."));
         }
     }
 
