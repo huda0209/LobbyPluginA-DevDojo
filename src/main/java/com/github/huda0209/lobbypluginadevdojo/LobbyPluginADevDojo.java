@@ -37,7 +37,7 @@ public final class LobbyPluginADevDojo extends JavaPlugin {
         public void BlockBreakEvent(BlockBreakEvent event){
             if(!event.getPlayer().getWorld().getName().equalsIgnoreCase("lobby")) return;
             if(event.getPlayer().hasPermission("LobbyPluginADevDojo.breakBlock")) return;
-            event.getPlayer().sendMessage(ChatColor.translateAlternateColorCodes('&',"&cYou don't permit to break block in this server!"));
+            event.getPlayer().sendMessage(ChatColor.translateAlternateColorCodes('&',"&cYou don't permit to break block in this world!"));
             event.setCancelled(true);
         }
     }
@@ -55,7 +55,7 @@ public final class LobbyPluginADevDojo extends JavaPlugin {
         @EventHandler
         public void PlayerJoinEvent(PlayerJoinEvent event){
             if(!ExistWorld("lobby",event.getPlayer().getServer().getWorlds())){
-                getLogger().warning("Cannot find world \"lobby\". Please a world named \"lobby\".");
+                getLogger().warning("Cannot find the world \"lobby\". Please a world named \"lobby\".");
                 return;
             }
 
