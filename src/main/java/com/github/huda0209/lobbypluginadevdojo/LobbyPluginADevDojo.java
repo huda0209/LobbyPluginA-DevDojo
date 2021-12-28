@@ -55,7 +55,7 @@ public final class LobbyPluginADevDojo extends JavaPlugin {
         @EventHandler
         public void PlayerJoinEvent(PlayerJoinEvent event){
             if(!ExistWorld("lobby",event.getPlayer().getServer().getWorlds())){
-                getLogger().warning("Cannot find the world \"lobby\". Please a world named \"lobby\".");
+                getLogger().warning("Cannot find the world \"lobby\". Please check a world named \"lobby\".");
                 return;
             }
 
