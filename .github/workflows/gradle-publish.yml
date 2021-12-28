@@ -32,7 +32,10 @@ jobs:
     # The USERNAME and TOKEN need to correspond to the credentials environment variables used in
     # the publishing section of your build.gradle
     - name: Publish to GitHub Packages
-      uses: actions/upload-artifact@v2
+      uses: softprops/action-gh-release@v1
       with:
-        name: Package
-        path: build/libs
+        tag_name: action-v${{ github.run_number }}
+        #build/libs
+        path: '*.jar'
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
