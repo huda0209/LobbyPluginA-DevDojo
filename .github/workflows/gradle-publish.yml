@@ -36,6 +36,6 @@ jobs:
       with:
         tag_name: action-v${{ github.run_number }}
         #build/libs
-        path: '*.jar'
+        files: '*.jar'
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
